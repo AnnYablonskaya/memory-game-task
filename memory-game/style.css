@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+  display: flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  color: rgb(71, 5, 97);
+  font-family: 'Redressed', cursive;
+  font-size: 20px;
+}
+.score{
+  margin: 20px;
+  color: rgb(71, 5, 97);
+  font-family: 'Redressed', cursive;
+  font-size: 35px;
+}
+.res{
+  color: rgb(71, 5, 97);
+  font-family: 'Redressed', cursive;
+  font-size: 35px;
+}
+.res::marker{
+  color: rgb(71, 5, 97);
+  font-family: 'Redressed', cursive;
+  font-size: 35px;
+}
+main {
+    height: 100vh;
+    display: flex;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to  bottom right, rgb(190, 21, 241), antiquewhite );
+}
+.clear{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: bisque;
+  color: rgb(71, 5, 97);
+  font-family: 'Redressed', cursive;
+  font-size: 20px;
+}
+  
+  .game {
+    perspective: 1000px;
+    width: 540px;
+    height: 540px;
+    margin: 50px auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    position: relative;
+    transform: scale(1);
+}
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+.card.flip {
+  transform: rotateY(180deg);
+}
+  
+.font-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background:cornsilk;
+    backface-visibility: hidden;
+  }
+.font-face{
+    transform: rotateY(180deg);
+  }
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+.right-footer{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    font-size: 25px;
+    color:rgba(0,0,0,.3);
+    justify-content: space-between;
+
+}
+.rss{ 
+    display: flex;
+    margin-left: 700px;
+    align-items: center;
+}
+.rss-img{
+    width: 100px;
+}
+.c{
+    padding: 20px;
+}
+.year{
+    padding: 20px;
+}
+.github{
+    padding: 20px;
+    color: black;
+}
